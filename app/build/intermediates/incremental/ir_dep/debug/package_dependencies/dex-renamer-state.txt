@@ -1,0 +1,4 @@
+#Sat Jun 09 18:51:10 EET 2018
+base.0=D\:\\Bil-495\\Porotokka-Android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
