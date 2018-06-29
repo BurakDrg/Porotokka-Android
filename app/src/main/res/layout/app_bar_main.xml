@@ -20,15 +20,11 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--<include layout="@layout/content_main" />-->
+    <include layout="@layout/content_main" />
 
-    <android.widget.CalendarView
-        android:id="@+id/deneme"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:title="@string/action_settings"
-        />
+    <include layout="@layout/daily_calendar" />
+
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -36,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:background="#ff0000ff"
+        android:background="@color/blue"
         app:srcCompat="@mipmap/ic_plus_white_48dp" />
 
 </android.support.design.widget.CoordinatorLayout>

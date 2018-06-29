@@ -11,9 +11,14 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import com.example.burak.calendar.R.string.app_name
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.add_event_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.daily_calendar.*
+import java.text.DateFormatSymbols
+import java.text.SimpleDateFormat
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -23,10 +28,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        val months = DateFormatSymbols().months
+        toolbar.title = months[SimpleDateFormat("MM").format(calendar.date).toInt()-1]
+        setSupportActionBar(toolbar)
+
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
+
+        calendar.setOnDateChangeListener({ view, year, month, dayOfMonth ->
+            toolbar.title = months[month]
+        })
 
         nav_view.setNavigationItemSelectedListener(this)
         fab.setOnClickListener(this)
@@ -35,8 +48,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onClick(v: View) {
         when (v.id) {
             R.id.fab -> {
-                val intent = Intent(applicationContext, SecondActivity::class.java)
-                startActivity(intent)
+
+                calendar.visibility = View.INVISIBLE
+                calendar2.visibility = View.VISIBLE
+                toolbar.title = toolbar.title.toString() + " " + (SimpleDateFormat("dd").format(calendar.date))
+
+                /*val intent = Intent(applicationContext, SecondActivity::class.java)
+                startActivity(intent)*/
             }
         }
     }
