@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/calendar2"
+    android:id="@+id/D_calendar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="invisible"
@@ -11,6 +11,7 @@
     tools:showIn="@layout/app_bar_main">
 
     <ScrollView
+        android:id="@+id/D_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">

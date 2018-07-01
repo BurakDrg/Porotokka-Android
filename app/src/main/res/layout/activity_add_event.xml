@@ -4,13 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    android:id="@+id/activity_page">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/dbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#ff0000ff"
-        app:srcCompat="@mipmap/ic_plus_white_48dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/close"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="52dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:stateListAnimator="@null"/>
+        <EditText
+            android:id="@+id/event_header"
+            android:hint="Title, time"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:textCursorDrawable="@color/white"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:stateListAnimator="@null"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp">
+        <TextView
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/time_picker"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>

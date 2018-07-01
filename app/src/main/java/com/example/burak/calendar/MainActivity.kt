@@ -2,18 +2,15 @@ package com.example.burak.calendar
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.MotionEvent
 import android.view.View
-import android.widget.Toast
-import com.example.burak.calendar.R.string.app_name
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.add_event_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.daily_calendar.*
@@ -21,14 +18,20 @@ import java.text.DateFormatSymbols
 import java.text.SimpleDateFormat
 
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, View.OnTouchListener {
+
+    companion object {
+        val months = DateFormatSymbols().months
+        var currentMonth = ""
+        var currentDay = ""
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        val months = DateFormatSymbols().months
+
         toolbar.title = months[SimpleDateFormat("MM").format(calendar.date).toInt()-1]
         setSupportActionBar(toolbar)
 
@@ -37,26 +40,42 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
-        calendar.setOnDateChangeListener({ view, year, month, dayOfMonth ->
+        currentMonth = months[SimpleDateFormat("MM").format(calendar.date).toInt()-1]
+        currentDay = SimpleDateFormat("dd").format(calendar.date)
+
+        calendar.setOnDateChangeListener({ view, year, month, day ->
             toolbar.title = months[month]
+            currentMonth = months[month]
+            currentDay = day.toString()
         })
 
         nav_view.setNavigationItemSelectedListener(this)
         fab.setOnClickListener(this)
+
     }
+
 
     override fun onClick(v: View) {
         when (v.id) {
             R.id.fab -> {
-
-                calendar.visibility = View.INVISIBLE
-                calendar2.visibility = View.VISIBLE
-                toolbar.title = toolbar.title.toString() + " " + (SimpleDateFormat("dd").format(calendar.date))
-
-                /*val intent = Intent(applicationContext, SecondActivity::class.java)
-                startActivity(intent)*/
+                val intent = Intent(applicationContext, SecondActivity::class.java)
+                startActivity(intent)
             }
         }
+
+
+    }
+
+    override fun onTouch(p0: View?, motion: MotionEvent?): Boolean {
+        if (motion != null) {
+            when(motion.actionMasked){
+                MotionEvent.ACTION_DOWN -> {
+                    toolbar.title = "geldi"
+                }
+            }
+        }
+        toolbar.title = "geldi"
+        return true
     }
 
     override fun onBackPressed() {
@@ -83,14 +102,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
+            R.id.daily -> {
+                M_calendar.visibility = View.INVISIBLE
+                D_calendar.visibility = View.VISIBLE
+                toolbar.title = "$currentDay $currentMonth"
             }
             R.id.nav_gallery -> {
 
             }
-            R.id.nav_slideshow -> {
-
+            R.id.monthly -> {
+                M_calendar.visibility = View.VISIBLE
+                D_calendar.visibility = View.INVISIBLE
+                toolbar.title = currentMonth
             }
         }
 
