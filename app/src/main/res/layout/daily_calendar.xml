@@ -197,158 +197,370 @@
                 android:layout_width="0dp"
                 android:layout_height="1500dp"
                 android:layout_weight="8">
+                <TextView
+                    android:id="@+id/hour0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="30dp"
+                    android:text="Deneme0"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="60dp"
                     android:layout_marginRight="10dp"
-                    android:background="@color/gray" />
+                    android:background="@color/gray"/>
+                <TextView
+                    android:id="@+id/hour1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="90dp"
+                    android:text="Deneme1"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="120dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="150dp"
+                    android:text="Deneme2"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="180dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="210dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="240dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="270dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="300dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="330dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="360dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="390dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="420dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="450dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="480dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="510dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="540dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="570dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="600dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="630dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="660dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="690dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="720dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="750dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="780dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="810dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="840dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="870dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="900dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="930dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="960dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="990dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1020dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1050dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1080dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1110dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1140dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1170dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1200dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1230dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1260dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1290dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1320dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1350dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1380dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
+                <TextView
+                    android:id="@+id/hour23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:paddingTop="1410dp"
+                    android:text="Deneme"
+                    android:visibility="invisible"/>
                 <View
-                    android:layout_width="fill_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_marginTop="1440dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/gray" />
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="1500dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@color/gray" />
+
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>
