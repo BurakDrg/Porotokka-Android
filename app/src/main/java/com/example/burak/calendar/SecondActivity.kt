@@ -82,7 +82,7 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
 
                 connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "POST"
-
+                println("Geldi")
 
                 val post = DataOutputStream(connection.outputStream)
 
@@ -172,7 +172,6 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
                     println("Daily")
                     while (monP < 12){
                         if(monP == 0 || monP == 2 || monP == 4 || monP == 6 || monP == 7 || monP == 9 || monP == 11){
-                            println(monP)
                             date_picker.text = "$dayP " + months[monP] + " $yearP"
                             ServerCommunication().execute(serverurl)
                             dayP++
@@ -199,13 +198,13 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
                                 monP++
                             }
                         }
+                        Thread.sleep(200)
                     }
                 }
                 else if (non_recursive.text.equals("Weekly")){
                     println("Weekly")
                     while (monP < 12){
                         if(monP == 0 || monP == 2 || monP == 4 || monP == 6 || monP == 7 || monP == 9 || monP == 11){
-                            println(monP)
                             date_picker.text = "$dayP " + months[monP] + " $yearP"
                             ServerCommunication().execute(serverurl)
                             dayP += 7
@@ -232,13 +231,13 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
                                 monP++
                             }
                         }
+                        Thread.sleep(200)
                     }
                 }
                 else{
                     println("Monthly")
                     while (monP < 12){
                         if(monP == 0 || monP == 2 || monP == 4 || monP == 6 || monP == 7 || monP == 9 || monP == 11){
-                            println(monP)
                             date_picker.text = "$dayP " + months[monP] + " $yearP"
                             ServerCommunication().execute(serverurl)
                             monP++
@@ -257,6 +256,7 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
                             }
                             monP++
                         }
+                        Thread.sleep(200)
                     }
                 }
                 val intent = Intent(applicationContext, MainActivity::class.java)
