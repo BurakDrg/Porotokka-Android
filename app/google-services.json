@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "483332484643",
+    "firebase_url": "https://porotokka-56c0a.firebaseio.com",
+    "project_id": "porotokka-56c0a",
+    "storage_bucket": "porotokka-56c0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483332484643:android:aa2cd4211f1fec76",
+        "android_client_info": {
+          "package_name": "com.example.burak.calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483332484643-89peq2ed74pvb8peq3cl6rh44u6m5llb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.burak.calendar",
+            "certificate_hash": "d0f780ee437a6be4cee15fdae36b2a9a28dda080"
+          }
+        },
+        {
+          "client_id": "483332484643-ce3rd4enfo0m9gq319hm28qpve20e6r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuJwuV7Mmj7hiZ6-B5OS5m774alE9k4AU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483332484643-ce3rd4enfo0m9gq319hm28qpve20e6r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
