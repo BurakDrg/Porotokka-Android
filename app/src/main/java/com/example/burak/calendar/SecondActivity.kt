@@ -32,8 +32,7 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         val months = DateFormatSymbols().months
-        //val serverurl = "https://agile-caverns-47941.herokuapp.com/posts"
-        val serverurl = "http://192.168.56.1:3000/posts"
+        val serverurl = "https://floating-hollows-92820.herokuapp.com/posts"
         val JSON = MediaType.parse("application/json; charset=utf-8")
         val pname = "post="
         var name = "event_name="
@@ -82,7 +81,6 @@ class SecondActivity : AppCompatActivity(), View.OnClickListener {
 
                 connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "POST"
-                println("Geldi")
 
                 val post = DataOutputStream(connection.outputStream)
 

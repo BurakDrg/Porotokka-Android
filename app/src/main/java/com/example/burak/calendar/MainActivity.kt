@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         var currentYear = LocalDateTime.now().year.toString()
         var currentMonth = LocalDateTime.now().month.toString()
         var currentDay = String.format ("%d", LocalDateTime.now().dayOfMonth.toInt())
-        val serverurl = "https://agile-caverns-47941.herokuapp.com/posts"
+        val serverurl = "https://floating-hollows-92820.herokuapp.com/all"
         var eventname = arrayListOf<String>()
         var eventdateday = arrayListOf<String>()
         var eventdatemonth = arrayListOf<String>()
@@ -113,9 +113,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 D_calendar.visibility = View.VISIBLE
                 toolbar.title = "$currentDay $currentMonth"
                 fillDaily()
-            }
-            R.id.nav_gallery -> {
-
             }
             R.id.monthly -> {
                 M_calendar.visibility = View.VISIBLE
@@ -277,7 +274,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "GET"
                 var inString = translate(connection.inputStream)
-
                 publishProgress(inString)
             } catch (ex: Exception) {
 
